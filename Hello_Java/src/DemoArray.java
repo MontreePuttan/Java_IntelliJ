@@ -1,4 +1,4 @@
-public class Demo_Array {
+public class DemoArray {
 
     public static void demo1(){
         int[] scores = new int[6]; // 0-4
@@ -18,10 +18,11 @@ public class Demo_Array {
     public static void demo2(){
         int[] scores = {10,10,10,10,10,10};
         int sum2 = 0;
-        for (int i = 0; i < scores.length; i++) {
-            sum2 = sum2 + scores[i];
+        for (int score : scores) {
+            sum2 = sum2 + score;
         }
         System.out.println(sum2);
+
     }
 
 

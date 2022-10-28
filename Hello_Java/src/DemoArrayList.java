@@ -1,8 +1,5 @@
 import java.util.ArrayList;
-
-public class Demo_ArrayList {
-
-
+public class DemoArrayList {
     public static void main(String[] args) {
 
         String[] arr = {"06","Ammy","Metel"};
@@ -24,20 +21,25 @@ public class Demo_ArrayList {
         cars.get(4)[1] = "Mena"; // Get ArrayList and Set Array
         cars.set(5,arr);
 
-
-        	/*
-        	System.out.println(cars.get(0)[0]);
-        	System.out.println(cars.get(0)[1]);
-        	System.out.println(cars.get(0)[2]);
-        	System.out.println("=============================");
-        	*/
+        /*
+        System.out.println(cars.size());
+        System.out.println(cars.get(0).length);
+        System.out.println(cars.get(0)[1]);
+        System.out.println(cars.get(0)[2]);
+        */
 
         for(int i = 0; i < cars.size(); i++) {
+
+            for (int a = 0; a < cars.get(i).length; a++) {
+                System.out.println(cars.get(i)[a]);
+            }
+
+            /*
             System.out.print(cars.get(i)[0] + " ");
             System.out.print(cars.get(i)[1] + " ");
             System.out.print(cars.get(i)[2] + " ");
             System.out.print("\n");
-            //System.out.println(Arrays.toString(cars.get(i)));
+             */
         }
 
 
